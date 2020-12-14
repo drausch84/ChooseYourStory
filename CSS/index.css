@@ -6,10 +6,18 @@ header{
 body{
     background: #2E2E2E;
 }
+.container{
+    background: #DCDBDF;
+    border: 2px solid black;
+}
 .main-header{
-    font-family: 'Creepster', cursive;
+    font-family: 'Nosifer', cursive;
     font-size: 100px;
     text-align:center;
-    border: 3px solid black;
-    background: #DCDBDF;
+}
+.tagline{
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight:bold;
+    text-align: center;
 }
