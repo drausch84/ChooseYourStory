@@ -71,6 +71,11 @@ var CHOICES = [{
         //Enter dining room hallway door **Bar**
         id: "bar",
         text: "You enter the door at the end of the hallway and notice a rather elaborate bar.  It appears as if this was the most recently occupied room so far, with no cobwebs or dust to " +
-        "be found.  Alongside the "
+        "be found.  Alongside the wall near the end of the main bar area you notice a safe.  As you walk toward the wall-safe, you see a few crumpled pieces of paper on a bar stool in the corner." +
+        "You uncrumple one piece of paper and see a number sequence written down, '12-7-2-15'.  The second piece of paper has the sequence, '2-5-1-10' written down.  And the third and final piece " +
+        "of paper has the sequence, '3-11-5-19', written down.  One of these must be the combination to the safe, but which one?",
+        options: [{
+            text: "Try sequence, '12-7-2-15"
+        }]
 
 }];
