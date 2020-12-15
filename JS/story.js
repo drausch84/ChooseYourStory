@@ -54,7 +54,7 @@ var CHOICES = [{
             text: "Go through the door.",
             goto: "dining-room-door-no-knife"
         }, {
-            text: "Head toward the mansion foyer",
+            text: "Head toward the mansion foyer.",
             goto: "foyer"
         }]
     }, {
@@ -75,7 +75,35 @@ var CHOICES = [{
         "You uncrumple one piece of paper and see a number sequence written down, '12-7-2-15'.  The second piece of paper has the sequence, '2-5-1-10' written down.  And the third and final piece " +
         "of paper has the sequence, '3-11-5-19', written down.  One of these must be the combination to the safe, but which one?",
         options: [{
-            text: "Try sequence, '12-7-2-15"
-        }]
+            text: "Try sequence, '12-7-2-15'.",
+            goto: "wrong-sequence-death"
+        }, {
+            text: "Try sequence, '2-5-1-10'.",
+            goto: "wrong-sequence-redo"
+        }, {
+            text: "Try sequence, '3-11-5-19'.",
+            goto: "correct-safe-sequence"
+        }],
+    }, {
+        //First sequence (Death)
+        id: "wrong-sequence-death",
+        text: "You enter the sequence, '12-7-2-15'.  Nothing seems to happen until you begin to hear a ticking noise.  You desperately try to figure out what is happening " +
+        "but the ticking sound intensifies until a shrill alarm sounds off.  The wall safe door explodes off its hinges, ripping your head off of its shoulders.",
+        gameover: "lose"
+    }, {
+        //Second sequence (Redo)
+        id: "wrong-sequence-redo",
+        text: "You enter the sequence, '2-5-1-10'.  Nothing happens.  The correct sequence must be one of the other ones.",
+        goto: "bar"
+    }, {
+        //Third (Correct) sequence
+        id: "correct-safe-sequence",
+        text: "You enter the sequence, '3-11-5-19'.  After entering the final number, you hear a loud 'click' and the safe door slightly opens.  You pull the door open completely " +
+        "and inside the safe, you notice a key.  On the key, you notice an embelm of a crow.  You've seen this embelm before.  You decide to head back to the mansion foyer."
+        next: "foyer"
+
+    }, {
+        
+    }
 
 }];
